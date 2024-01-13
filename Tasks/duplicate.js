@@ -1,11 +1,11 @@
 // Return an array with duplicates
 'use strict';
 
-duplicate = (value, N) => {
-  if (N <= 0) return [];
+const duplicate = (value, number) => {
+  if (number <= 0) return [];
   else {
     res = [];
-    for (let i = 0; i < N; i++) {
+    for (let i = 0; i < number; i++) {
       res[i] = value;
     }
     return res;
