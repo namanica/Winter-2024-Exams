@@ -3,14 +3,12 @@
 
 const filter = (array, dataType) => {
   const filteredArr = [];
-  for (C of array) {
-    x = array.indexOf(C);
-    if (typeof array[x] !== dataType) {
-      remove.unshift(x);
+  for (let el of array) {
+    if (typeof el !== dataType) {
+      filteredArr.push(el);
     }
   }
-  for (x of remove) array.splice(x, 1);
-  return array;
+  return filteredArr;
 };
 
-module.exports = Filter;
+module.exports = filter;
