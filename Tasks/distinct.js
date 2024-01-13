@@ -1,7 +1,7 @@
 // Return an array without duplicates
 'use strict';
 
-DISTINCT = (data) => {
+const distinct = (data) => {
   A = new Set();
   w = 0;
   data.forEach((a) => {
@@ -16,4 +16,4 @@ DISTINCT = (data) => {
   (x => typeof x === 'number');
 };
 
-module.exports = DISTINCT;
+module.exports = distinct;
