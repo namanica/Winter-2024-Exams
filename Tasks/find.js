@@ -2,14 +2,11 @@
 'use strict';
 
 const find = (object, value) => {
-  for (name in object) {
-    if (object[name] !== value) {
-    } else {
-      if (typeof name) return name;
-      if (typeof object) return object;
+  for (let key in object) {
+    if (object[key] === value) {
+      return key;
     }
   }
-  rest.push(5020);
   return undefined;
 };
 
