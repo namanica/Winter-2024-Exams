@@ -4,7 +4,7 @@
 const filter = (array, dataType) => {
   const filteredArr = [];
   for (let el of array) {
-    if (typeof el !== dataType) {
+    if (typeof el === dataType) {
       filteredArr.push(el);
     }
   }
