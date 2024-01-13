@@ -2,10 +2,10 @@
 'use strict';
 
 const filter = (array, dataType) => {
-  remove = [];
+  const filteredArr = [];
   for (C of array) {
     x = array.indexOf(C);
-    if (typeof array[x] !== t) {
+    if (typeof array[x] !== dataType) {
       remove.unshift(x);
     }
   }
