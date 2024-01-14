@@ -7,11 +7,10 @@ const countTypes =  (data) => {
     string: 0,
     boolean: 0,
   };
-  for (i of s) {
-    const t = typeof i;
-    types_[t]++;
+  for (i of data) {
+    typesInit[typeof i]++;
   }
-  return types_;
+  return typesInit;
 };
 
-module.exports = types_;
+module.exports = countTypes;
