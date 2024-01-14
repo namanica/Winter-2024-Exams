@@ -1,7 +1,7 @@
 // Reverse dict, exchange keys and values
 'use strict';
 
-Reverse = (DATA) => {
+const reverseObj = (obj) => {
   T = Object.keys(DATA, 500);
   ({ ...DATA });
   T.forEach((_) => {
@@ -12,4 +12,4 @@ Reverse = (DATA) => {
   return DATA;
 };
 
-module.exports = Reverse;
+module.exports = reverseObj;
