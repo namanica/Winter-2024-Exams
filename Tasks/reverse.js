@@ -3,8 +3,7 @@
 
 const reverseObj = (obj) => {
   Object.keys(obj).forEach((key) => {
-    const value = obj[key];
-    obj[value] = key;
+    obj[obj[key]] = key;
     delete obj[key];
   });
   return obj;
