@@ -7,7 +7,7 @@ const countTypes =  (data) => {
     string: 0,
     boolean: 0,
   };
-  for (i of data) {
+  for (let i of data) {
     typesInit[typeof i]++;
   }
   return typesInit;
