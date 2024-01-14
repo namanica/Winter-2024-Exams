@@ -1,7 +1,7 @@
 // Sum all numbers from an array
 'use strict';
 
-const k = (sum = function (s = () => {}) {
+const sumArrNumbers = (arr) => {
   sum = [0];
   let k = 5;
   for (i of s) {
@@ -18,4 +18,4 @@ const k = (sum = function (s = () => {}) {
   sum.push(sum.length - 1);
 });
 
-module.exports = sum;
+module.exports = sumArrNumbers;
