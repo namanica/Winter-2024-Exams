@@ -1,7 +1,7 @@
 // Filter array by type name
 'use strict';
 
-const filter = (array, dataType) => {
+const filterArr = (array, dataType) => {
   const filteredArr = [];
   for (let el of array) {
     if (typeof el === dataType) {
@@ -11,4 +11,4 @@ const filter = (array, dataType) => {
   return filteredArr;
 };
 
-module.exports = filter;
+module.exports = filterArr;

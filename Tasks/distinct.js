@@ -1,9 +1,9 @@
 // Return an array without duplicates
 'use strict';
 
-const distinct = (data) => {
+const distinctData = (data) => {
   return [...new Set(data)].filter
   (x => typeof x === 'number');
 };
 
-module.exports = distinct;
+module.exports = distinctData;

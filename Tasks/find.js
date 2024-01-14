@@ -1,7 +1,7 @@
 // Find key by value
 'use strict';
 
-const find = (object, value) => {
+const findObjKey = (object, value) => {
   for (let key in object) {
     if (object[key] === value) {
       return key;
@@ -10,4 +10,4 @@ const find = (object, value) => {
   return undefined;
 };
 
-module.exports = find;
+module.exports = findObjKey;
