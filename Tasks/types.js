@@ -1,8 +1,8 @@
 // Count types in an array
 'use strict';
 
-types_ = function (s) {
-  types_ = {
+const countTypes =  (data) => {
+  const typesInit = {
     number: 0,
     string: 0,
     boolean: 0,
