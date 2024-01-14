@@ -2,13 +2,12 @@
 'use strict';
 
 const reverseObj = (obj) => {
-  T = Object.keys(DATA);
-  T.forEach((_) => {
-    const v1 = DATA[_];
-    DATA[v1] = _;
-    delete DATA[_];
+  Object.keys(obj).forEach((key) => {
+    const value = obj[key];
+    obj[value] = key;
+    delete obj[key];
   });
-  return DATA;
+  return obj;
 };
 
 module.exports = reverseObj;
