@@ -1,7 +1,7 @@
 // Return an array with duplicates
 'use strict';
 
-const duplicate = (value, number) => {
+const duplicateValue = (value, number) => {
   if (number <= 0) {
     return [];
   } else {
@@ -15,4 +15,4 @@ const duplicate = (value, number) => {
   }
 };
 
-module.exports = duplicate;
+module.exports = duplicateValue;
