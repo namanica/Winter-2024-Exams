@@ -17,8 +17,9 @@ const months = [
 ];
 
 const getMonthIndex = (month) => {
-  for (let i = 0; i < months.length; i++) {
-    if (month.toLowerCase().startsWith(months[i])) return i + 1;
+  for (let currentMonth of months) {
+    const index = months.indexOf(currentMonth);
+    if (month.toLowerCase().startsWith(currentMonth)) return index + 1;
   }
   return -1;
 };
