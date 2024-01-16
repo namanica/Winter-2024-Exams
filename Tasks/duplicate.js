@@ -2,17 +2,14 @@
 'use strict';
 
 const duplicateValue = (value, number) => {
-  if (number <= 0) {
-    return [];
-  } else {
-    //second variant using array methods
-    //return [...Array(number).keys()].map(el=> value);
-    const res = [];
-    for (let i = 0; i < number; i++) {
-      res[i] = value;
-    }
-    return res;
+  //second variant using array methods
+  //return [...Array(number).keys()].map(el=> value);
+  if (number <= 0) return [];
+  const res = [];
+  for (let i = 0; i < number; i++) {
+    res[i] = value;
   }
+  return res;
 };
 
 module.exports = duplicateValue;
