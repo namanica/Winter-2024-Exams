@@ -4,11 +4,11 @@
 const reverseObj = (obj) => {
   //second variant using object methods
   //return Object.fromEntries(Object.entries(obj).map(([key,value])=>[value,key]));
+  const reversedObj = {};
   Object.keys(obj).forEach((key) => {
-    obj[obj[key]] = key;
-    delete obj[key];
+    reversedObj[obj[key]] = key;
   });
-  return obj;
+  return reversedObj;
 };
 
 module.exports = reverseObj;
